@@ -1,14 +1,7 @@
 module.exports = {
   root: true,
   env: { browser: true, es2021: true },
-  extends: [
-    'airbnb',
-    'airbnb-typescript',
-    'airbnb/hooks',
-    'plugin:react/recommended',
-    'plugin:prettier/recommended',
-    'plugin:@typescript-eslint/recommended',
-  ],
+  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks', 'plugin:react/recommended', 'plugin:prettier/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:storybook/recommended'],
   overrides: [],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -34,5 +27,6 @@ module.exports = {
     'no-nested-ternary': 'off',
     'import/no-extraneous-dependencies': 'off',
     'consistent-return': 'off',
+    'react/require-default-props': 'off',
   },
 }
