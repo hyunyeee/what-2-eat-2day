@@ -6,8 +6,8 @@ import Menus from "./pages/Menus.tsx";
 function App() {
   return (
     <BrowserRouter>
+      <RouteChangeTracker />
       <Routes>
-        <RouteChangeTracker />
         <Route path="/" element={<Main />} />
         <Route path="/menus" element={<Menus />} />
       </Routes>
